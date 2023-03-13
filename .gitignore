@@ -1,0 +1,6 @@
+node_modules
+*.env
+.dccache
+.DS_Store
+.vscode
+.idea
