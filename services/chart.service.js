@@ -1,5 +1,8 @@
-import { createCanvas } from 'canvas';
+import { createCanvas,registerFont } from 'canvas';
 import * as ChartHelper from '../helpers/chart.js';
+
+registerFont('fonts/Montserrat.ttf', { family: 'Montserrat' });
+
 /**
  * @async
  * @function renderChart
