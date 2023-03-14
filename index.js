@@ -62,8 +62,8 @@ app.use('*', (_req, res) => {
     res.status(404).json({ message: 'Not found' });
 });
 
-const PORT = process.env.API_PORT || 3000;
-const URI = process.env.API_URL || 'http://localhost:3000';
+const PORT = process.env.PORT || 3000;
+const URI = process.env.API_URL || `http://localhost:${PORT}`;
 const server = app.listen(PORT, () => {
     console.log(`Server started w/ pid ${process.pid}`);
     console.log(`Listening on ${URI}`);
